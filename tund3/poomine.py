@@ -21,3 +21,4 @@ while elu > 0:
     if arvamus == 0:
         print("tähte polnud")
         elu -= 1
+print("test")
