@@ -16,7 +16,7 @@ kokku = 0
 arv = 0
 while kokku < 10:
     kokku = kokku + 1
-    while kokku < 5:
+    while kokku < 5: #sisemine tsükkel jookseb nii kaua kui saab
         print ("arv on väiksem kui viis")
         arv = kokku
         ruut = arv**2

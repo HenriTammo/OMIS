@@ -9,6 +9,6 @@ for number in nimekiri:
     
 for y in range(10):
     if y > 6:
-        break
+        break #sulgeb tsükli
     else:
         print (y)
