@@ -1,24 +1,12 @@
-import random
-
-file = open("numbrid.txt", "w")
-
-for x in range(1000):
-    file.write(str(random.randint(1, 100)) + "\n")
-file.close()
-
-file = open("numbrid.txt", "r")
-nimekiri = []
-for x in(file):
-    x = x.strip()
-    nimekiri.append(int(x))
-
-maksimum = 0
-hulk = 0
-
-for x in range(len(nimekiri)):
-    if maksimum < nimekiri[x]:
-        maksimum = nimekiri[x]
-        hulk = 0
-    if maksimum == nimekiri[x]:
-        hulk = hulk + 1
-print(maksimum, hulk)
+from turtle import *
+ 
+def ruut():             # Defineerime funktsiooni nimega ruut
+    i = 0
+    while i < 4:
+        forward(100)
+        left(90)
+        i = i + 1                 # Kutsume funktsiooni ruut välja. Kilpkonn joonistab ruudu küljega 100 pikslit
+    right(10)# Pöörame paremale 45°
+    ruut()                  # Kutsume uuesti funktsiooni ruut välja
+ruut()
+exitonclick()
