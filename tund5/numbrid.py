@@ -1,12 +1,14 @@
-from turtle import *
- 
-def ruut():             # Defineerime funktsiooni nimega ruut
-    i = 0
-    while i < 4:
-        forward(100)
-        left(90)
-        i = i + 1                 # Kutsume funktsiooni ruut välja. Kilpkonn joonistab ruudu küljega 100 pikslit
-    right(10)# Pöörame paremale 45°
-    ruut()                  # Kutsume uuesti funktsiooni ruut välja
-ruut()
-exitonclick()
+x = 1
+y = 5.6
+z = "Tere minu esimene tund"
+sõna = z
+print (x , y , z)
+
+liitmine = "Tere" + "Maailm"
+lahutamine = y - x
+korrutamine = 10 * 10.123
+jagamine = 5 / 5
+
+ruutu= 2**2
+sisestus = input("Mis on sinu nimi?")
+print (sisestus)
